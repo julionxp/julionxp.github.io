@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <link rel="Website Icon" type="png"
+  href="internet.png">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>DZ DEVELOPER</title>
+  
+  <script>
+    // Selecione todos os links âncora na página
+    const links = document.querySelectorAll('a[href^="#"]');
+  
+    // Função para lidar com o clique nos links
+    function handleClick(event) {
+      event.preventDefault(); // Evita que o link redirecione imediatamente
+  
+      // Obtenha o elemento de destino com base no atributo href do link
+      const target = document.querySelector(this.getAttribute('href'));
+  
+      // Calcule a posição do elemento de destino em relação à janela de visualização
+      const targetPosition = target.getBoundingClientRect().top;
+  
+      // Role a página suavemente até o elemento de destino
+      window.scrollBy({
+        top: targetPosition,
+        behavior: 'smooth'
+      });
+    }
+  
+    // Adicione o evento de clique a todos os links âncora
+    links.forEach(link => {
+      link.addEventListener('click', handleClick);
+    });
+  </script>
+  
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#SECTION1">Sobre mim</a></li>
+        <li><a href="#SECTION2">Objetivos</a></li>
+        <li><a href="#SECTION3">Interesses</a></li>
+        <li><a href="#SECTION4">Habilidades</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="IMG-JULIO-LOGO">
+    <img src="LOGO JC.png" alt="LOGO-JULIO">
+  </div>
+
+  <div id="SECTION1" class="ABOUT-ME-DIV">
+    <h1 class="ABOUT-ME">SOBRE MIM</h1>
+    <p class="PARAGRAFO-ABOUT-ME">Sou um desenvolvedor Web iniciante sendo formado em Análise de Desenvolvimento de Sistemas e <br> em linguagens de programação como HTML, CSS e aprendendo JavaScript. <br>Tenho exeperiência básica em projetos pessoais. Além disso, possuo conhecimentos básicos em<br> auxiliar admnistrativo e habilidades intermediárias em informática, o que contribui para minha<br> versatilidade e adaptabilidade em diferentes contextos profissionais.</p>
+  </div>
+
+  <div class="loader">
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+  </div>
+
+  <div id="SECTION2" class="OBEJETIVOS-DIV">
+    <h1 class="OBJETIVOS">OBJETIVOS</h1>
+    <p class="PARAGRAFO-OBJETIVOS">Busco uma oportunidade como Desenvolvedor Web iniciante, onde eu possa aplicar meus conhecimentos <br> em linguagens de programção front-end, juntamente com minhas habilidades intermediárias em inglês,<br> para contribuir no desenvolvimento de soluções criativas e fucionais. Almejo integrar uma equipe dinâmica,<br> onde possa continuar aprimorando minhas habilidades técnicas e colaborar no crescimento da empresa.</p>
+  </div>
+
+  <div class="LOADER-JUST-TWO">
+    <div class="loader-two">
+      <div class="loader-square"></div>
+      <div class="loader-square"></div>
+      <div class="loader-square"></div>
+      <div class="loader-square"></div>
+      <div class="loader-square"></div>
+      <div class="loader-square"></div>
+      <div class="loader-square"></div>
+      </div>
+  </div>
+
+  <div id="SECTION3" class="CARD-INTERESSES-TWO">
+    <div class="card-two-interesses">
+      <div class="content">
+        <p class="heading">Interesses
+        </p><p class="para">
+          Tenho interesses em aprofundar meus conhecimentos de 
+          desenvolvimentos web, explorando novas tecnologias e participando de 
+          projetos desafiadores. Além disso, busco constantemente aprender e 
+          me atualizar sobre as tendências do setor tecnológico.
+        </p>
+      </div>
+    </div>
+
+    <div class="card-skill-five">
+      <div class="header">My Skills</div>
+      <div class="body">
+        <div class="skill">
+          <div class="skill-name html">HTML</div>
+          <div class="skill-level">
+            <div style="width: 90%" class="skill-percent"></div>
+          </div>
+          <div class="skill-percent-number">90%</div>
+        </div>
+        <div class="skill">
+          <div class="skill-name css">CSS</div>
+          <div class="skill-level">
+            <div style="width: 85%" class="skill-percent"></div>
+          </div>
+          <div class="skill-percent-number">85%</div>
+        </div>
+        <div class="skill">
+          <div class="skill-name js">JavaScript</div>
+          <div class="skill-level">
+            <div style="width: 10%" class="skill-percent"></div>
+          </div>
+          <div class="skill-percent-number">10%</div>
+        </div>
+      </div>
+    </div>
+    
+
+    <div id="SECTION4" class="card-four-interesses">
+      <div class="content">
+        <p class="heading">Habilidades
+        </p><p class="para">
+          Linguagens de Programação: HTML, CSS ("Intermediário") <br>
+          <br>
+          Frameworks: Bootstrap (iniciante)<br>
+          <br>
+          Pacote Office: Word, Exel, Power Point (básico) <br>
+          <br>
+          Inglês: Nível Intermediário (leitura intermédio e comunicação básica)
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+  <h5 class="FINAL-H5">Alguns elementos presente aqui eu tive ajuda de um site! <br> Porém tanto o posicionamento de tudo e as estilizações, foi feita por minha pessoa!</h5>
+
+
+</body>
+</html>
